@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="floating-shapes">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Hakan Chandar</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a id="active"href="#">Blog</a></li>
+        </ul>
+    </nav>
+
+    <div class="blog-container">
+        <header class="blog-header">
+            <h1 class="blog-title">My ICT Journey</h1>
+            <p class="blog-subtitle">
+                A chronological journal documenting my program experiences, career discoveries, 
+                and growth in the world of Information & Communication Technology.
+            </p>
+        </header>
+
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track" id="carouselTrack">
+
+                    <!-- Blog Post 1: Study Choice -->
+                    <article class="blog-post">
+                        <div class="post-content">
+                            <span class="post-category">Career Orientation</span>
+                            <h2 class="post-title">Why I Chose ICT: My Path to HZ University</h2>
+                            <div class="post-date">September 2025</div>
+                            <p class="post-excerpt">
+                                Discovering my passion for technology wasn't just about loving computers—it was about 
+                                finding a field where problem-solving meets creativity. This post explores my journey 
+                                to choosing HBO-ICT, the activities that shaped my decision, and what I hope to achieve 
+                                after completing my studies at HZ University of Applied Sciences.
+                            </p>
+                            <a href="articles/article1.html" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="post-image">🎓</div>
+                    </article>
+
+                    <!-- Blog Post 2: SWOT Analysis -->
+                    <article class="blog-post">
+                        <div class="post-content">
+                            <span class="post-category">Self-Assessment</span>
+                            <h2 class="post-title">Personal SWOT Analysis: Understanding My Strengths</h2>
+                            <div class="post-date">September 2025</div>
+                            <p class="post-excerpt">
+                                Self-awareness is crucial for growth in any field, especially in ICT where technology 
+                                evolves rapidly. I've conducted a thorough SWOT analysis to identify my strengths, 
+                                weaknesses, opportunities, and threats as I embark on my ICT journey. This honest 
+                                self-reflection helps me plan my development strategy.
+                            </p>
+                            <a href="articles/article2.html" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="post-image">📊</div>
+                    </article>
+
+                    <!-- Blog Post 3: Programming Experience -->
+                    <article class="blog-post">
+                        <div class="post-content">
+                            <span class="post-category">Technical Skills</span>
+                            <h2 class="post-title">My Programming Journey: From Beginner to Developer</h2>
+                            <div class="post-date">October 2025</div>
+                            <p class="post-excerpt">
+                                Every programmer has a unique story of how they started coding. Mine began with 
+                                curiosity and evolved into a genuine passion for creating digital solutions. 
+                                From my first "Hello World" to building functional applications, this post chronicles 
+                                my programming experience and the languages that have shaped my coding perspective.
+                            </p>
+                            <a href="articles/article3.html" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="post-image">💻</div>
+                    </article>
+
+                    <!-- Blog Post 4: First Feedback -->
+                    <article class="blog-post">
+                        <div class="post-content">
+                            <span class="post-category">Reflection</span>
+                            <h2 class="post-title">Learning from Feedback: My SKC Assignment Review</h2>
+                            <div class="post-date">October 2025</div>
+                            <p class="post-excerpt">
+                                Receiving feedback can be both exciting and nerve-wracking, especially when it's your 
+                                first major assignment feedback in a new program. The SKC assignment feedback provided 
+                                valuable insights into my academic performance and areas for improvement. Here's how 
+                                I processed this feedback and what it taught me about my learning journey.
+                            </p>
+                            <a href="articles/article4.html" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="post-image">💡</div>
+                    </article>
+
+                    <!-- Blog Post 5: ICT Field Overview -->
+                    <article class="blog-post">
+                        <div class="post-content">
+                            <span class="post-category">Industry Insight</span>
+                            <h2 class="post-title">The ICT Landscape: Opportunities in Digital Innovation</h2>
+                            <div class="post-date">November 2025</div>
+                            <p class="post-excerpt">
+                                The Information and Communication Technology field is vast and ever-evolving, 
+                                offering countless career paths from software development to cybersecurity. 
+                                This comprehensive overview explores current trends, emerging technologies, 
+                                and the diverse opportunities available in today's ICT industry, helping me 
+                                navigate my future career choices.
+                            </p>
+                            <a href="articles/article5.html" class="read-more-btn">Read More</a>
+                        </div>
+                        <div class="post-image">🌐</div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn" id="prevBtn">‹</button>
+                <button class="carousel-btn" id="nextBtn">›</button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </div>
+
+    <script src="../script/blog.js"></script>
+</body>
+</html>

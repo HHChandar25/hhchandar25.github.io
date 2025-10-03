@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.flying-cube {
+    display: none;
+}
+
+.card {
+    height: 70%;
+    line-height: 2.1;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 1.5rem;
+    margin-top: 8rem;
+    border-radius: 1.5rem;
+    background-image: url('../images/bg-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 15rem;
+    background-position: center -8.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    box-shadow: 0px 20px 30px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.card .illustration {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card .illustration picture {
+    margin-top: -6.7rem;
+    margin-left: -2rem;
+}
+
+.card .faq {
+    padding: 3rem 1.5rem;
+    height: 24rem;
+}
+
+.card .faq-item {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.card .faq-question {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.card .faq-question.active-question {
+    color: #fff;
+    font-weight: bold;
+}
+
+.card .faq-question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.card .faq-answer {
+    color: #9d9d9d;
+    padding-right: 0.5rem;
+    overflow: hidden;
+    margin: 0;
+    max-height: 0;
+    transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card .show-answer {
+    max-height: 10rem;
+    margin-top: 0.75rem;
+}
+
+h1 {
+    font-size: 34px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: -60px;
+}
+
+.flying-cube {
+    display: block;
+    position: absolute;
+    width: 11rem;
+    top: 10rem;
+    left: -5.5rem;
+    transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.move-cube {
+    transform: translateX(-2rem);
+}
+
+.card {
+    width: 70rem;
+    max-width: 70rem;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    align-items: center;
+    background-size: 50rem;
+    background-position: -30rem -14.5rem;
+}
+
+.card .illustration {
+    overflow: hidden;
+    flex: 1 1 40%;
+}
+
+.card .illustration img {
+    margin: 0;
+    margin-left: -4rem;
+}
+
+.card .faq {
+    padding: 4rem 5rem;
+    flex: 1 1 60%;
+    height: 26rem;
+}

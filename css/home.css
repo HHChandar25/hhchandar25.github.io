@@ -1,0 +1,231 @@
+.bio {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 100px;
+    position: relative;
+}
+
+.bio-section {
+    flex: 1;
+    max-width: 600px;
+}
+
+.bio-title {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: #8b45c5;
+}
+
+.bio-description {
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.contact-btn {
+    background: transparent;
+    border: 2px solid #8b45c5;
+    color: #8b45c5;
+    padding: 15px 30px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+    background: #8b45c5;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 69, 197, 0.3);
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.character-silhouette {
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(45deg, #00000033, #333);
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character-silhouette::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 40px;
+    background: #444;
+    border-radius: 20px;
+}
+
+.ict-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.geometric-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shape {
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.shape-1 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: -40px;
+    transform: rotate(45deg);
+    background-image: url(https://www.sowiso.com/images/login/logo_hz.png);
+}
+
+.shape-2 {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    left: -30px;
+    background-image: url(../images/hz-green.png);
+}
+
+.shape-3 {
+    width: 40px;
+    height: 40px;
+    top: 60%;
+    left: -20px;
+    transform: rotate(-15deg);
+    background-image: url(../images/hz-purple.png);
+}
+
+.dots-pattern {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    background: #8b45c5;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.hz-link {
+    position: absolute;
+    bottom: 50px;
+    right: -100px;
+    background: rgba(139, 69, 197, 0.1);
+    border: 1px solid #8b45c5;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease-out ;
+}
+
+.hz-link::before {
+    content: "🟢";
+    margin-right: 8px;
+}
+
+.hz-link:hover {
+    background-color: #8b45c5;
+}
+
+.quote-section {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 800px;
+}
+
+.quote {
+    font-size: 24px;
+    font-style: italic;
+    color: #cccccc;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.quote::before {
+    content: "";
+    font-size: 60px;
+    color: #8b45c5;
+    position: absolute;
+    top: -20px;
+    left: -40px;
+}
+
+.quote::after {
+    content: "";
+    font-size: 60px;
+    color: #8b45c5;
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+}
+
+.quote-author {
+    color: #8b45c5;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.character-silhouette {
+    animation: float 3s ease-in-out infinite;
+}
+
+.dot:nth-child(odd) {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
