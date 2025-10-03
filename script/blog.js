@@ -1,10 +1,10 @@
 let currentIndex = 0;
 const slides = document.querySelectorAll('.blog-post');
 const totalSlides = slides.length;
-const track = document.getElementById('carouselTrack');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const dotsContainer = document.getElementById('carouselDots');
+const track = document.getElementById('carousel-track');
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+const dotsContainer = document.getElementById('carousel-dots');
 let autoPlayInterval;
 
 function initCarousel() 
